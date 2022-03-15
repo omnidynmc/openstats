@@ -21,15 +21,16 @@ AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_LANG([C++])
 
-prefix="`pwd`"
-bindir="`pwd`"
-libdir="`pwd`/lib"
-includedir="`pwd`/include"
-ofincludedir="`pwd`/libraries/openframe/include"
-oflibdir="`pwd`/libraries/openframe/lib"
+prefix="/usr/local"
+#bindir="`pwd`"
+#libdir="`pwd`/lib"
+#includedir="`pwd`/include"
+ofincludedir="/usr/local/include/openframe"
+oflibdir="/usr/local/lib"
+local_include="`pwd`/include"
 
-CPPFLAGS="$CPPFLAGS -I/usr/include"
-CXXFLAGS="-Wall -pipe -g -I$includedir -I$ofincludedir"
+CPPFLAGS="$CPPFLAGS -I/usr/include -I$local_include"
+CXXFLAGS="-Wall -pipe -g -I$includedir -I$ofincludedir -I$local_include"
 CXX="g++"
 LIBS="$LIBS"
 

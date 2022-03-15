@@ -3,11 +3,11 @@
 
 #include <openframe/openframe.h>
 
-#include <openstats/Data.h>
-#include <openstats/Datapoint.h>
-#include <openstats/StatsClient.h>
-#include <openstats/StatsClient_Exception.h>
-#include <openstats/constants.h>
+#include "openstats/Data.h"
+#include "openstats/Datapoint.h"
+#include "openstats/StatsClient.h"
+#include "openstats/StatsClient_Exception.h"
+#include "openstats/constants.h"
 
 namespace openstats {
   using namespace openframe::loglevel;
